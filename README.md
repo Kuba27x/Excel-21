@@ -1,200 +1,208 @@
-Excel-21
+# 📊 Excel-21
 
-Project Description
+![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![Excel](https://img.shields.io/badge/Microsoft-Excel-blue.svg)
 
-Excel-21 is a guide to Analysis ToolPak in Microsoft Excel. Learn practical tips, step-by-step instructions, and see illustrated examples for: Histogram, Descriptive Statistics, Moving Average, Exponential Smoothing, Correlation Analysis, Regression Analysis.
+## ✨ Project Description
 
-Table of Contents
+**Excel-21** is your illustrated guide to the Analysis ToolPak in Microsoft Excel, complete with screenshots and step-by-step instructions for:
+- Histogram
+- Descriptive Statistics
+- Moving Average
+- Exponential Smoothing
+- Correlation Analysis
+- Regression Analysis
 
-The Analysis ToolPak is an Excel add-in program that provides data analysis tools for financial, statistical and engineering data analysis.
+> 📚 **Goal:** Help you analyze data efficiently in Excel—ideal for learners and professionals!
 
-To load the Analysis ToolPak add-in, execute the following steps.
+---
 
-1. On the File tab, click Options.
-2. Under Add-ins, select Analysis ToolPak and click on the Go button.
+## 📒 Table of Contents
 
+- [Analysis ToolPak Setup](#-analysis-toolpak-setup)
+- [Histogram](#-histogram)
+- [Descriptive Statistics](#-descriptive-statistics)
+- [Moving Average](#-moving-average)
+- [Exponential Smoothing](#-exponential-smoothing)
+- [Correlation Analysis](#-correlation-analysis)
+- [Regression Analysis](#-regression-analysis)
+- [Screenshots](#-screenshots)
+- [Requirements](#-requirements)
+- [Author](#-author)
+
+---
+
+## ⚙️ Analysis ToolPak Setup
+
+The Analysis ToolPak is an Excel add-in providing data analysis tools for financial, statistical, and engineering tasks.
+
+1. On the **File** tab, click **Options**.
+2. Under **Add-ins**, select **Analysis ToolPak** and click **Go**.
+   
 ![screenshot](Screenshots/Analysis1.png)
-
-3. Check Analysis ToolPak and click on OK.
-
+   
+3. Check **Analysis ToolPak** and click **OK**.
+   
 ![screenshot](Screenshots/Analysis2.png)
-
-4. On the Data tab, in the Analysis group, you can now click on Data Analysis.
-
+   
+4. On the **Data** tab, in the **Analysis** group, you can now click **Data Analysis**.
+   
 ![screenshot](Screenshots/Analysis3.png)
 
-Histogram
+---
 
-1. First, enter the bin numbers (upper levels) in the range C4:C8.
-2. On the Data tab, in the Analysis group, click Data Analysis.
-3. Select Histogram and click OK.
+## 📊 Histogram
+
+1. Enter bin numbers (upper levels) in the range `C4:C8`.
+2. Go to **Data** tab → **Data Analysis**.
+3. Select **Histogram** and click **OK**.
 
 ![screenshot](Screenshots/Histogram1.png)
-
-4. Select the range A2:A20
-5. Click in the Bin Range box and select the range C4:C8.
-6. Click the Output Range option button, click in the Output Range box and select cell F6.
-7. Check Chart Output.
-
+   
+4. Select your data range (`A2:A20`), bin range (`C4:C8`), and output range (`F6`). Check **Chart Output**.
+   
 ![screenshot](Screenshots/Histogram2.png)
-
-8. Click OK.
-
-Result:
-
+   
+5. Click **OK**.
+   
 ![screenshot](Screenshots/Histogram3.png)
-
-9. Click the legend on the right side and press Delete.
-10. Properly label your bins.
-11. To remove the space between the bars, right click a bar, click Format Data Series and change the Gap Width to 0%.
-12. To add borders, right click a bar, click Format Data Series, click the Fill & Line icon, click Border and select a color.
-
+   
+6. Click the legend and press Delete. Label bins clearly.
+7. To remove the space between bars: right-click a bar → **Format Data Series** → set **Gap Width** to 0%.
+8. To add borders: right-click bar → **Format Data Series** → **Fill & Line** icon → **Border** → select color.
+    
 ![screenshot](Screenshots/Histogram4.png)
 
-(Note: I changed the color to make it look more clear.)
+> 🎨 *Note: Color changed for clarity. If using Excel 2016+, you can use the built-in Histogram chart type.*
 
-(Note: If you have Excel 2016 or later, you can use the Histogram chart type.)
+---
 
-Descriptive Statistics
+## 📑 Descriptive Statistics
 
-You can use the Analysis Toolpak add-in to generate descriptive statistics.
+Generate summary statistics using the add-in:
 
-1. On the Data tab, in the Analysis group, click Data Analysis.
-2. Select Descriptive Statistics and click OK.
-
+1. Go to **Data** tab → **Data Analysis**.
+2. Select **Descriptive Statistics** and click **OK**.
+   
 ![screenshot](Screenshots/Desc1.png)
-
-3. Select the range A1:A15 as the Input Range.
-4. Select cell C4 as the Output Range.
-5. Make sure Summary statistics is checked.
-
+   
+3. Input range: `A1:A15`, Output range: `C4`, check **Summary statistics**.
+   
 ![screenshot](Screenshots/Desc2.png)
-
-6. Click OK.
-
-Result:
-
+   
+4. Click **OK**.
+   
 ![screenshot](Screenshots/Desc3.png)
 
-Moving Average
+---
 
-A moving average is used to smooth out irregularities (peaks and valleys) to easily recognize trends.
+## 📈 Moving Average
 
-1. On the Data tab, in the Analysis group, click Data Analysis.
-2. Select Moving Average and click OK.
+Moving averages smooth out peaks and valleys to reveal trends.
 
+1. Go to **Data** tab → **Data Analysis**.
+2. Select **Moving Average** and click **OK**.
+   
 ![screenshot](Screenshots/Moving1.png)
-
-3. Click in the Input Range box and select the range B2:M2.
-4. Click in the Interval box and type 6.
-5. Click in the Output Range box and select cell B3.
-6. Click OK.
-
+   
+3. Input range: `B2:M2`, Interval: `6`, Output range: `B3`.
+4. Click **OK**.
+   
 ![screenshot](Screenshots/Moving2.png)
-
-Result:
-
+   
+5. Repeat with intervals `2` and `4`, then plot the graph.
+    
 ![screenshot](Screenshots/Moving3.png)
-
-7. Repeat steps 1-6 for interval = 2 and interval = 4
-8. Plot a graph of these values.
-
-Result:
-
+   
 ![screenshot](Screenshots/Moving4.png)
 
-Conclusion: The larger the interval, the more the peaks and valleys are smoothed out. The smaller the interval, the closer the moving averages are to the actual data points.
+> 📌 *Conclusion: Larger intervals smooth more, smaller intervals are closer to actual data.*
 
-Exponential Smoothing
+---
 
-Exponential smoothing is used to smooth out irregularities (peaks and valleys) to easily recognize trends.
+## 📉 Exponential Smoothing
 
-1. On the Data tab, in the Analysis group, click Data Analysis.
-2. Select Exponential Smoothing and click OK.
+Another way to highlight trends:
 
+1. Go to **Data** tab → **Data Analysis**.
+2. Select **Exponential Smoothing** and click **OK**.
+   
 ![screenshot](Screenshots/Exp1.png)
-
-3. Click in the Input Range box and select the range B2:M2.
-4. Click in the Damping factor box and type 0.9. Literature often talks about the smoothing constant α (alpha). The value (1- α) is called the damping factor.
-5. Click in the Output Range box and select cell B3.
-6. Click OK.
-
+   
+3. Input range: `B2:M2`, Damping factor: `0.9` (1-α), Output range: `B3`.
+4. Click **OK**.
+   
 ![screenshot](Screenshots/Exp2.png)
 
-Result:
-
+5. Repeat for α = `0.3` and α = `0.8`, then plot the graph.
+   
 ![screenshot](Screenshots/Exp3.png)
-
-7. Repeat steps 1 to 6 for alpha = 0.3 and alpha = 0.8.
-8. Plot a graph of these values.
-
-Result:
-
+   
 ![screenshot](Screenshots/Exp4.png)
 
-Conclusion: The smaller the alpha (and the larger the damping factor), the more the peaks and valleys are smoothed out. A larger alpha (and a smaller damping factor) results in the smoothed values being closer to the actual data points.
+> 📌 *Conclusion: Smaller α (larger damping) means smoother lines.*
 
-Correlation Analysis
+---
 
-The correlation coefficient (a value between -1 and +1) tells you how strongly two variables are related to each other.
+## 🔗 Correlation Analysis
 
-1. On the Data tab, in the Analysis group, click Data Analysis.
-2. Select Correlation and click OK.
+The correlation coefficient measures how strongly variables relate.
 
+1. Go to **Data** tab → **Data Analysis**.
+2. Select **Correlation** and click **OK**.
+   
 ![screenshot](Screenshots/Correlation1.png)
-
-3. Select the range A1:C6 as the Input Range.
-4. Check Labels in first row.
-5. Select cell A8 as the Output Range.
-6. Click OK.
-
+   
+3. Input range: `A1:C6`, check **Labels in first row**, Output range: `A8`.
+4. Click **OK**.
+   
 ![screenshot](Screenshots/Correlation2.png)
-
-Result: 
-
+   
 ![screenshot](Screenshots/Correlation3.png)
 
-(Note: I plotted a graph of these values.)
+> ℹ️ *Variables A and C are positively correlated (0.91); A and B, B and C are weakly correlated.*
 
-Conclusion: variables A and C are positively correlated (0.91). Variables A and B are not correlated (0.19). Variables B and C are also not correlated (0.11). You can verify these conclusions by looking at the graph.
+---
 
-(Note: You can also use the built-in CORREL function.)
+## 📉 Regression Analysis
 
-Regression Analysis
+Test relationships between Quantity Sold and inputs like Price/Advertising.
 
-Is there a relationship between Quantity Sold (Output) and Price and Advertising (Input) in our example? Lets find out.
-
-1. On the Data tab, in the Analysis group, click Data Analysis.
-2. Select Regression and click OK.
-
+1. Go to **Data** tab → **Data Analysis**.
+2. Select **Regression** and click **OK**.
+   
 ![screenshot](Screenshots/Regression1.png)
-
-3. Select the Y Range (A1:A8). This is the predictor variable (also called dependent variable).
-4. Select the X Range(B1:C8). These are the explanatory variables (also called independent variables). These columns must be adjacent to each other.
-5. Check Labels.
-6. Click in the Output Range box and select cell A11.
-7. Check Residuals.
-8. Click OK.
-
+   
+3. Y Range: `A1:A8` (dependent), X Range: `B1:C8` (independent), check **Labels** and **Residuals**. Output range: `A11`.
+4. Click **OK**.
+   
 ![screenshot](Screenshots/Regression2.png)
-
-Result with plotted graph:
-
+   
 ![screenshot](Screenshots/Regression3.png)
 
-R Square equals 0.962, which is a very good fit. 96% of the variation in Quantity Sold is explained by the independent variables Price and Advertising. The closer to 1, the better the regression line fits the data.
+> ✅ *R Square = 0.962 (excellent fit). Significance F < 0.05 and all P-values < 0.05, so results are statistically significant.*
 
-Significance F and P-values
+**Regression equation:**  
+`y = Quantity Sold = 8536.214 - 835.722 * Price + 0.592 * Advertising`
 
-To check if your results are reliable (statistically significant), look at Significance F (0.001). If this value is less than 0.05, you're OK.
-Most or all P-values should be below 0.05. In our example this is the case. (0.000, 0.001 and 0.005).
+---
 
-Coefficients
+## 📷 Screenshots
 
-The regression line is: y = Quantity Sold = 8536.214 -835.722 * Price + 0.592 * Advertising. In other words, for each unit increase in price, Quantity Sold decreases by 835.722 units.
+All screenshots are in the `/Screenshots` folder.
 
-Residuals
+---
 
-The residuals show you how far away the actual data points are from the predicted data points (using the equation).
+## ℹ️ Requirements
 
-   
+- Microsoft Excel (recommended: 2021/365)
+- Windows OS
+
+---
+
+## 👨‍💻 Author
+
+Project and documentation by **Kuba27x**  
+Repository: [Kuba27x/Excel-21](https://github.com/Kuba27x/Excel-21)
+
+---
